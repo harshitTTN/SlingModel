@@ -1,0 +1,25 @@
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <firstname jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldDescription="Click to add FirstName" fieldLabel="FirstName" name="./firstname"/>
+                    <lastname jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldDescription="Click to add LastName" fieldLabel="LastName" name="./lastname"/>
+                    <dateofbirth jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" fieldDescription="Select the Date" fieldLabel="DateOfBirth" name="./dateofbirth" valueFormat="YYYY/MM/DD"/>
+                    <gender jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="gender" name="./gender">
+                        <items jcr:primaryType="nt:unstructured">
+                            <male jcr:primaryType="nt:unstructured" text="Male" value="m"/>
+                            <female jcr:primaryType="nt:unstructured" text="female" value="f"/>
+                        </items>
+                    </gender>
+                    <maritalstatus jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="MaritalStatus" name="./maritalstatus">
+                        <items jcr:primaryType="nt:unstructured">
+                            <married jcr:primaryType="nt:unstructured" text="married" value="mar"/>
+                            <single jcr:primaryType="nt:unstructured" text="single" value="sin"/>
+                        </items>
+                    </maritalstatus>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
