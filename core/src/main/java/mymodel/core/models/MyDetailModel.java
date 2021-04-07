@@ -1,6 +1,7 @@
 package mymodel.core.models;
 
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 
 import javax.annotation.PostConstruct;
@@ -9,7 +10,8 @@ import javax.inject.Named;
 import java.time.*;
 import java.util.Date;
 
-@Model(adaptables = {Resource.class})
+@Model(adaptables = {Resource.class},
+defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class MyDetailModel {
 
     @Inject
@@ -19,7 +21,6 @@ public class MyDetailModel {
     private String lastname;
 
     @Inject
-    @Named("gender")
     private String gender;
 
     @Inject
@@ -77,6 +78,13 @@ public class MyDetailModel {
             return "Mrs.";
         }
     }
+    @PostConstruct
+    public String getfullName(){
+
+        return firstname +" "+lastname;
+
+    }
+
 
 
 }
