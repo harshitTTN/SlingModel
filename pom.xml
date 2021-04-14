@@ -264,7 +264,7 @@ Bundle-DocURL:
                         <validatorsSettings>
                             <jackrabbit-nodetypes>
                                 <options>
-                                    <!-- use the nodetypes and namespaces from the aem-nodetypes.jar provided in the plugin dependencies -->
+                                    <!-- use the nodetypes1 and namespaces from the aem-nodetypes.jar provided in the plugin dependencies -->
                                     <cnds>tccl:aem.cnd</cnds>
                                 </options>
                             </jackrabbit-nodetypes>
